@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>Rpg Creature Search</h3>
+    <div class="container">
+
+        <div class="top-container">
+            <p>Search for a Creature:</p>
+            <div class="input-container">
+                <input type="text" id="search-input" required>
+                <button id="search-button" for="search-input">Search</button> 
+            </div>
+        </div>
+
+        <div class="creature-info">
+            
+            <div class="ids">
+                <p id="creature-name"></p>
+                <p id="creature-id"></p> 
+            </div>
+            
+            <div class="build">
+                <p id="weight"></p>
+                <p id="height"></p>  
+            </div>
+           
+            <div id="types"></div>
+            
+
+        </div>
+
+        <table class="stat-table">
+            <tr>
+                <th>BASE</th>
+                <th>STATS</th>
+            </tr>
+
+            <tr>
+                <td>HP:</td>
+                <td id="hp"></td>
+            </tr>
+            
+            <tr>
+                <td>ATTACK:</td>
+                <td id="attack"></td>
+            </tr>
+
+            <tr>
+                <td>DEFENSE:</td>
+                <td id="defense"></td>
+            </tr>
+
+            <tr>
+                <td>SP. ATTACK:</td>
+                <td id="special-attack"></td>
+            </tr>
+
+            <tr>
+                <td>SP. DEFENSE:</td>
+                <td id="special-defense"></td>
+            </tr>
+
+            <tr>
+                <td>SPEED:</td>
+                <td id="speed"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
